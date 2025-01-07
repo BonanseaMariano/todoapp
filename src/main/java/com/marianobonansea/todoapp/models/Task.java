@@ -12,14 +12,14 @@ import lombok.Data;
  * 
  * Annotations:
  * 
- * @Entity - Specifies that the class is an entity and is mapped to a database
+ * \"@Entity - Specifies that the class is an entity and is mapped to a database
  *         table.
- * @Data - Lombok annotation to generate getters, setters, toString, equals, and
+ * "\@Data - Lombok annotation to generate getters, setters, toString, equals, and
  *       hashCode methods.
  * 
  *       Fields:
- * @Id - Specifies the primary key of an entity.
- * @GeneratedValue - Provides the specification of generation strategies for the
+ * "\@Id - Specifies the primary key of an entity.
+ * "\@GeneratedValue - Provides the specification of generation strategies for the
  *                 values of primary keys.
  *                 private Long id - The unique identifier for the task.
  *                 private String title - The title or description of the task.
