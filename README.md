@@ -1,6 +1,6 @@
 # Todo Application
 
-This is a simple Todo Application built with Spring Boot and Thymeleaf. It allows users to add, delete, and toggle the completion status of tasks. The user interface is simple and built with Bootstrap CSS. This is my first microservice project.
+This is a simple Todo Microservice built with Spring Boot and Thymeleaf. It allows users to add, delete, and toggle the completion status of tasks. The user interface is simple and built with Bootstrap CSS. This is my first microservice project.
 
 ## Technologies Used
 
