@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-alpine
 WORKDIR /app
 
 # Copiar el archivo .jar generado al contenedor
-COPY target/todoapp-0.0.1-SNAPSHOT.jar app.jar
+COPY dist/todoapp-0.0.1-SNAPSHOT.jar app.jar
 
 # Exponer el puerto en el que la aplicación se ejecuta
 EXPOSE 8080
