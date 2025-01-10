@@ -38,11 +38,10 @@ public class TaskService {
      *
      * @param title the title of the new task
      */
-    public void createTask(String title) {
+    public Task createTask(String title) {
         Task task = new Task();
         task.setTitle(title);
-        task.setCompleted(false);
-        taskRepository.save(task);
+        return taskRepository.save(task);
     }
 
     /**
@@ -60,11 +59,11 @@ public class TaskService {
      * @param id the ID of the task to toggle
      * @throws IllegalArgumentException if the task with the given ID does not exist
      */
-    public void toggleTask(Long id) {
+    public Task toggleTask(Long id) {
         Task task = taskRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException("Invalid task Id:" + id));
+                .orElseThrow(() -> new RuntimeException("Task not found"));
         task.setCompleted(!task.isCompleted());
-        taskRepository.save(task);
+        return taskRepository.save(task);
     }
 
 }
