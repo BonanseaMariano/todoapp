@@ -21,7 +21,7 @@ The deployment was done using Render for the application and GitHub Pages to dis
 
 The project includes comprehensive documentation:
 
-- [API Documentation (Swagger)](https://todoapp-ydhz.onrender.com/swagger-ui.html) - Interactive REST API documentation
+- [API Documentation (Swagger)](https://todoapp-ydhz.onrender.com/swagger-ui/index.html) - Interactive REST API documentation
 - [Technical Documentation (JavaDoc)](https://bonanseamariano.github.io/todoapp/javadoc/) - Detailed code documentation
 
 ## API Documentation
