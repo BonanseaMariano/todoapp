@@ -15,7 +15,7 @@
   },
   "servers": [
     {
-      "url": "https://todoapp-ydhz.onrender.com/",
+      "url": "https://todoapp-ydhz.onrender.com",
       "description": "Servidor de Producción"
     }
   ],
