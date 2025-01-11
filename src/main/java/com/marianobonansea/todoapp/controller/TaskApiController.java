@@ -8,11 +8,6 @@ import org.springframework.web.bind.annotation.*;
 import com.marianobonansea.todoapp.models.Task;
 import com.marianobonansea.todoapp.services.TaskService;
 
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.responses.ApiResponses;
-import io.swagger.v3.oas.annotations.tags.Tag;
-
 /**
  * REST Controller for managing tasks through API endpoints.
  * 
@@ -24,7 +19,6 @@ import io.swagger.v3.oas.annotations.tags.Tag;
  */
 @RestController
 @RequestMapping("/api/tasks")
-@Tag(name = "Tareas", description = "API para gestionar tareas")
 public class TaskApiController {
 
     private final TaskService taskService;
@@ -43,10 +37,6 @@ public class TaskApiController {
      *
      * @return ResponseEntity containing the list of all tasks
      */
-    @Operation(summary = "Obtener todas las tareas")
-    @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "Lista de tareas recuperada exitosamente")
-    })
     @GetMapping
     public ResponseEntity<List<Task>> getTasks() {
         return ResponseEntity.ok(taskService.getTasks());
@@ -58,10 +48,6 @@ public class TaskApiController {
      * @param title the title of the new task
      * @return ResponseEntity containing the created task
      */
-    @Operation(summary = "Crear una nueva tarea")
-    @ApiResponses(value = {
-            @ApiResponse(responseCode = "201", description = "Tarea creada exitosamente")
-    })
     @PostMapping
     public ResponseEntity<Task> createTask(@RequestBody String title) {
         Task newTask = taskService.createTask(title);
@@ -74,7 +60,6 @@ public class TaskApiController {
      * @param id the ID of the task to delete
      * @return ResponseEntity with no content
      */
-    @Operation(summary = "Eliminar una tarea")
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteTask(@PathVariable Long id) {
         taskService.deleteTask(id);
@@ -87,7 +72,6 @@ public class TaskApiController {
      * @param id the ID of the task to toggle
      * @return ResponseEntity containing the updated task
      */
-    @Operation(summary = "Cambiar estado de una tarea")
     @PatchMapping("/{id}/toggle")
     public ResponseEntity<Task> toggleTask(@PathVariable Long id) {
         Task task = taskService.toggleTask(id);
