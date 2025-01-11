@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>TodoApp API Documentation</title>
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist@latest/swagger-ui.css">
 </head>
+
 <body>
     <div id="swagger-ui"></div>
     <script src="https://unpkg.com/swagger-ui-dist@latest/swagger-ui-bundle.js"></script>
     <script>
-        window.onload = function() {
+        window.onload = function () {
             SwaggerUIBundle({
                 url: "./swagger.json",
                 dom_id: '#swagger-ui',
@@ -17,9 +19,14 @@
                 presets: [
                     SwaggerUIBundle.presets.apis
                 ],
-                layout: "BaseLayout"
+                layout: "BaseLayout",
+                requestInterceptor: (req) => {
+                    req.headers['Access-Control-Allow-Origin'] = '*';
+                    return req;
+                }
             });
         }
     </script>
 </body>
+
 </html>
