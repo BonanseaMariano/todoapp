@@ -19,11 +19,7 @@
                 presets: [
                     SwaggerUIBundle.presets.apis
                 ],
-                layout: "BaseLayout",
-                requestInterceptor: (req) => {
-                    req.headers['Access-Control-Allow-Origin'] = '*';
-                    return req;
-                }
+                layout: "BaseLayout"
             });
         }
     </script>

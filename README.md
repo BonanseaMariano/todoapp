@@ -9,6 +9,7 @@ This is a simple Todo Microservice built with Spring Boot and Thymeleaf. It allo
 - ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 - ![JPA](https://img.shields.io/badge/JPA-007396?style=for-the-badge&logo=java&logoColor=white)
 - ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+- ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)
 
 ## Deployment
 
@@ -18,4 +19,16 @@ The deployment was done using Render for the application and GitHub Pages to dis
 
 ## Documentation
 
-- [Javadoc](https://bonanseamariano.github.io/todoapp/)
+The project includes comprehensive documentation:
+
+- [API Documentation (Swagger)](https://todoapp-ydhz.onrender.com/swagger-ui.html) - Interactive REST API documentation
+- [Technical Documentation (JavaDoc)](https://bonanseamariano.github.io/todoapp/javadoc/) - Detailed code documentation
+
+## API Documentation
+
+The REST API is documented using Swagger/OpenAPI. You can:
+
+- Explore available endpoints
+- Test API operations directly from the browser
+- View request/response schemas
+- Access the documentation at `/swagger-ui.html`
