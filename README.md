@@ -20,4 +20,4 @@ The deployment was done using Render for the application and GitHub Pages to dis
 
 The project includes comprehensive documentation:
 
-- [Technical Documentation (JavaDoc)](https://bonanseamariano.github.io/todoapp/javadoc/) - Detailed code documentation
+- [Technical Documentation (JavaDoc)](https://bonanseamariano.github.io/todoapp/) - Detailed code documentation
